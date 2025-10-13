@@ -14,4 +14,4 @@ This project is a team assignment for the CS100: Basic Web Development course in
 | (ชื่อ-สกุล) | (รหัสนักศึกษา) | Developer |
 | (ชื่อ-สกุล) | (รหัสนักศึกษา) | Developer |
 | (ชื่อ-สกุล) | (รหัสนักศึกษา) | Developer |
-| Saranwich Pochai | 6809681478 | Team Lead, Software Architect, Developer |
+| ศรัณย์วิชญ์ โพธิ์ชัย | 6809681478 | Team Lead, Software Architect, Developer |
