@@ -1,3 +1,19 @@
 .logo-btn{
     font-family: fantasy;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    vertical-align: bottom;
+}
+
+.navbar-brand img {
+    height: auto;
+    width: 2rem;
+    border-radius: 2rem;
+    margin:0 ;
+    padding: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    vertical-align: middle;
+}
+
+.dropdown-menu-dark {
+  border: none; 
 }
