@@ -17,3 +17,13 @@
 .dropdown-menu-dark {
   border: none; 
 }
+
+.hero-section {
+  /*Why -> The image is an decoration component, So prefer to put it on css more than html*/
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/resources/imgs/homepage-hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

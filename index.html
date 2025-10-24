@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +9,40 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="js/bootstrap.bundle.js"></script>
 </head>
+
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
             <div class="container-fluid">
-                
+
                 <a class="navbar-brand" href="#">
                     <img class="d-inline-block align-text-top" src="/resources/imgs/logo.png" alt="Homepage-logo">
-                    <span class="logo-btn">SS6 Music Festival</span> 
+                    <span class="logo-btn">SS6 Music Festival</span>
                 </a>
 
-                <button class="navbar-toggler" type="button" 
-                        data-bs-toggle="collapse" 
-                        data-bs-target="#mainNavbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="mainNavbar">
-                    
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Home">Home</a>
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#lineup">Guilde</a>
+                            <ul class="dropdown-menu bg-dark dropdown-menu-dark dropdown-divider-dark">
+                                <li><a class="dropdown-item" href="#">Band1</a></li>
+                                <li><a class="dropdown-item" href="#">Band2</a></li>
+                                <li><a class="dropdown-item" href="#">Band3</a></li>
+                                <li><a class="dropdown-item" href="#">Band4</a></li>
+                                <li><a class="dropdown-item" href="#">Band5</a></li>
+                                <li><a class="dropdown-item" href="#">Band6</a></li>
+                                <li><a class="dropdown-item" href="#">Band7</a></li>
+                                <li><a class="dropdown-item" href="#">Band8</a></li>
+                                <li><a class="dropdown-item" href="#">Band9</a></li>
+                            </ul>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#lineup">Lineup</a>
                             <ul class="dropdown-menu bg-dark dropdown-menu-dark dropdown-divider-dark">
@@ -44,15 +57,33 @@
                                 <li><a class="dropdown-item" href="#">Band9</a></li>
                             </ul>
                         </li>
-                    </ul>
 
-                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link register-btn" href="#contact">Give us feedback</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link register-btn" href="#contact">Register</a>
                         </li>
                     </ul>
-                </div> </div>
+                </div>
+            </div>
         </nav>
+
     </header>
-</body>
+
+    <main>
+        <section class="hero-section text-center text-white bg-dark min-vh-100 d-flex align-items-center">
+            <div class="container">
+                <h1 class="display-3 fw-bold">SS6 Music Festival</h1>
+                <p class="lead col-md-8 mx-auto">
+                    description here
+                </p>
+                <div class="container">
+                    <a href="#lineup" class="btn btn-lg btn-secondary mt-3 mx-1">View Lineup</a>
+                    <a href="#contact" class="btn btn-lg btn-primary mt-3 mx-1">Register Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </html>
