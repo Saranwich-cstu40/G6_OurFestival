@@ -7,7 +7,7 @@ This project is a team assignment for the CS100: Basic Web Development course in
 | ชื่อ-สกุล | เลขทะเบียนนักศึกษา | บทบาทในทีม (Role) |
 | :--- | :--- | :--- |
 | (ชื่อ-สกุล) | (รหัสนักศึกษา) | Developer |
-| (ชื่อ-สกุล) | (รหัสนักศึกษา) | Developer |
+| วรชัย เอี่ยมแสง | 6809617373 | Developer |
 | ตรีทิพยนิภา ชูเชิด | 6809617134 | Developer, tester |
 | ปภังกร รักนิยม | 6809617217 | Developer, UX UI designer, scrum team |
 | ภูริพงศ์ เอี้ยวสกุล | 6809617308 | Developer, QA+PO|
