@@ -1,0 +1,54 @@
+
+.feedback-section {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.55); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+}
+
+.feedback-card {
+  background: rgba(35, 35, 35, 0.75);
+  border-radius: 15px;
+  padding: 35px;
+  width: 400px;
+  color: #fff;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+.feedback-card h2 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.feedback-card .form-control,
+.feedback-card .form-select {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.feedback-card .form-control::placeholder {
+  color: #bfbfbf;
+}
+
+
+.feedback-card .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.feedback-card .btn {
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.feedback-card .btn:hover {
+  background-color: #198754;
+  color: #fff;
+  transform: scale(1.03);
+}
