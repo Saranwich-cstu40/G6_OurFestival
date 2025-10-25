@@ -12,32 +12,3 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-:root {
-    --band-gold: #f0c14b;
-    --band-box-bg: #1a1a1a;
-    --band-text-light: #e0e0e0;
-}
-
-.band-page-content {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.info-box {
-    background-color: var(--band-box-bg);
-    border: 2px solid var(--band-gold);
-    border-radius: 15px;
-    padding: 1.5rem 2rem; 
-}
-
-.info-box-title {
-    color: var(--band-gold);
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.info-box p {
-    color: var(--band-text-light);
-    font-weight: 300;
-    line-height: 1.7;/*for easier reading*/
-}
