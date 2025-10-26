@@ -6,7 +6,7 @@ This project is a team assignment for the CS100: Basic Web Development course in
 
 | ชื่อ-สกุล | เลขทะเบียนนักศึกษา | บทบาทในทีม (Role) |
 | :--- | :--- | :--- |
-| (ชื่อ-สกุล) | (รหัสนักศึกษา) | Developer |
+| วุฒิภัทร คล๊าก | 6809620112 | Developer, UX UI designer, tester |
 | วรชัย เอี่ยมแสง | 6809617373 | Developer |
 | ตรีทิพยนิภา ชูเชิด | 6809617134 | Developer, tester |
 | ปภังกร รักนิยม | 6809617217 | Developer, UX UI designer, scrum team |
