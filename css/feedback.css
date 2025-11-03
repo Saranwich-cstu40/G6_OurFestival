@@ -10,12 +10,13 @@
 }
 
 .feedback-card {
-  background: rgba(35, 35, 35, 0.75);
+  background-color: rgba(35, 35, 35, 0.45);
+  box-shadow: 5px 5px 15px #717171;
   border-radius: 15px;
   padding: 35px;
   width: 400px;
   color: #fff;
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  
 }
 
 .feedback-card h2 {
