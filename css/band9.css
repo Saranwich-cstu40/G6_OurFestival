@@ -1,0 +1,21 @@
+body {
+    font-family: 'Kanit', 'Inter';
+    font-weight: 300;
+
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../resources/imgs/band9-hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.product-image-placeholder img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border: 2px solid #f0c14b;
+    border-radius: 15px;
+}
