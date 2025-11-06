@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/register.js" defer></script>
 </head>
 
 <body>
@@ -76,12 +77,12 @@
     </header>
 
     <section class="form-register">
-        <form class="was-validated" novalidate>
+        <form id="registerForm" class="was-validated" novalidate>
             <div class="register-back register-card">
                 <h2>Register</h2>
                 <div>
                     <label for="input-email" class="form-label">Email:</label><br>
-                    <input type="email" name="email" class="form-control register-back" placeholder="name@gmail.com"
+                    <input id="input-email" type="email" name="email" class="form-control register-back" placeholder="name@gmail.com"
                         id="input-email" required>
                     <div class="valid-feedback">Nice!</div>
                     <div class="invalid-feedback">Please make sure your email is valid.</div>
@@ -91,15 +92,15 @@
 
                 <div>
                     <label for="input-password" class="form-label">Password:</label><br>
-                    <input type="password" name="password" class="form-control register-back" placeholder="Password"
+                    <input id="input-password" type="password" name="password" class="form-control register-back" placeholder="Password"
                         minlength="6" id="input-password" required>
                     <div class="valid-feedback">Nice!</div>
                     <div class="invalid-feedback">Please make it more than 6 characters.</div>
                     <Small>At least 6 characters</Small><br><br>
                 </div>
-                <a class="register-back register-button" href="Register_Complete.html">
+                <button id="signupBtn" type="submit" class="register-back register-button">
                     Sign up
-                </a>
+                </button>
             </div>
         </form>
     </section>
