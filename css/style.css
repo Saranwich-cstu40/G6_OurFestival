@@ -10,6 +10,24 @@
     background-color: rgba(0, 0, 0, 0);
 }
 
+.food-booth-page-content {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    color: #f0c14b;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
 .info-box {
     background-color: var(--band-box-bg);
     border: 2px solid var(--band-gold);
@@ -111,8 +129,6 @@ body {
 .dropdown-menu-dark {
   border: none;
 }
-
-
 
 #site-footer .footer-copyright {
   color: #adb5bd;
