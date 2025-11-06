@@ -111,7 +111,7 @@ body {
 }
 
 .logo-btn {
-  font-family: fantasy;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   vertical-align: bottom;
 }
