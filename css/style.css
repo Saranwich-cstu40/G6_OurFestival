@@ -146,11 +146,21 @@ body {
   transform: translateY(-3px);
 }
 
-.product-image-placeholder img{
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin: auto;
-    border: 2px solid #f0c14b;
-    border-radius: 15px;
+.product-image-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  overflow: hidden;
+  border-radius: 12px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; 
+}
+
+.product-image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+  border-radius: 12px;
 }
