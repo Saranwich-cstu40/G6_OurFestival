@@ -1,0 +1,14 @@
+body {
+    font-family: 'Kanit', 'Inter';
+    /*change font here*/
+    font-weight: 300;
+
+    /*Why -> The image is an decoration component, So prefer to put it on css more than html*/
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../resources/imgs/food-booth1-hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
