@@ -38,3 +38,9 @@ body {
 .register-card .form-control::placeholder {
     color: #757575;
 }
+
+.register-btn {
+    text-decoration: none;
+    text-align: center;
+    padding : 5px;
+}
