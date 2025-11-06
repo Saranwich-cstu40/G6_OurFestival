@@ -129,3 +129,12 @@ body {
   color: #ffffff;
   transform: translateY(-3px);
 }
+
+.product-image-placeholder img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border: 2px solid #f0c14b;
+    border-radius: 15px;
+}
