@@ -12,3 +12,15 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.food-image-placeholder img  {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  aspect-ratio: 1/1; /* ป้องกันบิดเบี้ยว */
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  border: 2px solid #f0c14b;
+  border-radius: 15px;
+}
