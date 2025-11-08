@@ -11,3 +11,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.name-section h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    margin-top: 80px;
+}
