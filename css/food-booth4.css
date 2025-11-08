@@ -6,9 +6,20 @@ body {
     /*Why -> The image is an decoration component, So prefer to put it on css more than html*/
     background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../resources/imgs/food-booth4-hero-background.jpg");
+    url("../resources/imgs/food-booth4-hero-background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+.food-image-placeholder img  {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  aspect-ratio: 1/1; /* ป้องกันบิดเบี้ยว */
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  border: 2px solid #f0c14b;
+  border-radius: 15px;
 }
