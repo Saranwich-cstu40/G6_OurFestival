@@ -164,3 +164,112 @@ body {
   display: block;
   border-radius: 12px;
 }
+
+/* SS6 - Our Artist Section */
+.ss6-artists {
+  /* ไม่ตั้ง background เพื่อไม่ขัดกับรูปพื้นหลังที่มีอยู่แล้ว */
+  color: #fff;
+}
+
+/* Title */
+.ss6-artists-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin: 0.25rem 0 0.2rem;
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+
+.ss6-artists-sub {
+  margin: 0;
+  color: #f4f4f4;
+  font-weight: 600;
+}
+
+/* Carousel wrapper */
+.ss6-carousel-wrap {
+  gap: 12px;
+  margin-top: 1.25rem;
+}
+
+/* Nav buttons */
+.ss6-nav {
+  border: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+.ss6-nav:active { transform: translateY(1px); }
+.ss6-nav:hover { background: rgba(255,255,255,0.12); }
+
+/* Scrollable carousel */
+.ss6-carousel {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  padding: 8px 14px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Hide thin scrollbar styling optionally */
+.ss6-carousel::-webkit-scrollbar { height: 10px; }
+.ss6-carousel::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 8px; }
+.ss6-carousel { scrollbar-color: rgba(255,255,255,0.06) transparent; scrollbar-width: thin; }
+
+/* Cards */
+.ss6-card {
+  scroll-snap-align: center;
+  flex: 0 0 230px;
+  height: 340px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* cover (วางรูปศิลปินด้านใน หรือเปลี่ยนเป็น background-image) */
+.ss6-card-cover {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  top: 16px;
+  bottom: 64px;
+  background: linear-gradient(180deg,#f6f6f6,#ffffff);
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+/* ชื่อด้านล่าง */
+.ss6-card-name {
+  font-weight: 800;
+  font-size: 18px;
+  color: #111;
+  padding-left: 4px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .ss6-card { flex: 0 0 210px; height: 320px; }
+  .ss6-artists-title { font-size: 2.2rem; }
+}
+
+@media (max-width: 760px) {
+  .ss6-carousel { gap: 18px; }
+  .ss6-card { flex: 0 0 68%; min-width: 240px; height: 320px; }
+  .ss6-nav { display: none; } /* บนอุปกรณ์จอเล็ก ให้ใช้นิ้วเลื่อนเอง */
+}
