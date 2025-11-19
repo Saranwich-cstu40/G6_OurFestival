@@ -3,106 +3,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
 
 :root {
-    --band-gold: #f0c14b;
-    --band-box-bg: #1a1a1a;
-    --band-text-light: #e0e0e0;
+  --band-gold: #f0c14b;
+  --band-box-bg: #1a1a1a;
+  --band-text-light: #e0e0e0;
 }
 
 .band-page-content {
-    background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .food-booth-page-content {
-    background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .hero-section h1 {
-    font-family: "Geologica", sans-serif;
-    font-size: 4rem;
-    font-weight: 900;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-    margin-bottom: 1rem;
+  font-family: "Geologica", sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: 1rem;
 }
 
 /* Add hover effect for the hero section title */
 .hero-section h1:hover {
-    transform: scale(1.1); /* Slightly enlarge the text */
-    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out; /* Smooth animation */
-    text-shadow: 0 0 10px #fec300, 0 0 20px #f0c14b, 0 0 30px #f0c14b; /* Yellow glow effect */
+  transform: scale(1.1);
+  /* Slightly enlarge the text */
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  /* Smooth animation */
+  text-shadow: 0 0 10px #fec300, 0 0 20px #f0c14b, 0 0 30px #f0c14b;
+  /* Yellow glow effect */
 }
 
 .hero-section p {
-    font-size: 1.5rem;
-    color: var(--band-text-light);
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  font-size: 1.5rem;
+  color: var(--band-text-light);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 .info-box {
-    background-color: var(--band-box-bg);
-    border: 2px solid var(--band-gold);
-    border-radius: 15px;
-    padding: 1.5rem 2rem; 
+  background-color: var(--band-box-bg);
+  border: 2px solid var(--band-gold);
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
 }
 
 .info-box-title {
-    color: var(--band-gold);
-    font-weight: 700;
-    margin-bottom: 1rem;
+  color: var(--band-gold);
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .info-box p {
-    color: var(--band-text-light);
-    font-weight: 300;
-    line-height: 1.7;/*for easier reading*/
+  color: var(--band-text-light);
+  font-weight: 300;
+  line-height: 1.7;
+  /*for easier reading*/
 }
 
 .info-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.1rem;
-    color: var(--band-text-light);
-    margin-bottom: 0.75rem;
-    border-bottom: 1px solid #333; 
-    padding-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  color: var(--band-text-light);
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.75rem;
 }
 
 
 .info-line span:first-child {
-    font-weight: 700;
-    color: var(--band-gold); 
+  font-weight: 700;
+  color: var(--band-gold);
 }
 
 .info-line span:last-child {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .song-list {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
 .song-list li {
-    font-size: 1.1rem;
-    color: var(--band-text-light);
-    margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  color: var(--band-text-light);
+  margin-bottom: 0.75rem;
 }
 
 
 .song-list li i {
-    color: var(--band-gold); 
-    margin-right: 0.75rem;
-    font-size: 1.2rem;
-    vertical-align: middle;
+  color: var(--band-gold);
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+  vertical-align: middle;
 }
 
 .info-box-text-simple {
-    color: var(--band-text-light);
-    font-size: 1.1rem;
-    font-weight: 300;
-    margin-bottom: 0.5rem; 
+  color: var(--band-text-light);
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
 }
 
 body {
@@ -158,19 +162,19 @@ body {
 
 .product-image-placeholder {
   width: 100%;
-  aspect-ratio: 1 / 1; 
+  aspect-ratio: 1 / 1;
   overflow: hidden;
-  border-radius: 12px; 
+  border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000; 
+  background-color: #000;
 }
 
 .product-image-placeholder img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   display: block;
   border-radius: 12px;
 }
@@ -208,15 +212,21 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 8px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   color: #fff;
   display: grid;
   place-items: center;
   cursor: pointer;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
-.ss6-nav:active { transform: translateY(1px); }
-.ss6-nav:hover { background: rgba(255,255,255,0.12); }
+
+.ss6-nav:active {
+  transform: translateY(1px);
+}
+
+.ss6-nav:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
 
 /* Scrollable carousel */
 .ss6-carousel {
@@ -232,9 +242,19 @@ body {
 }
 
 /* Hide thin scrollbar styling optionally */
-.ss6-carousel::-webkit-scrollbar { height: 10px; }
-.ss6-carousel::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 8px; }
-.ss6-carousel { scrollbar-color: rgba(255,255,255,0.06) transparent; scrollbar-width: thin; }
+.ss6-carousel::-webkit-scrollbar {
+  height: 10px;
+}
+
+.ss6-carousel::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+}
+
+.ss6-carousel {
+  scrollbar-color: rgba(255, 255, 255, 0.06) transparent;
+  scrollbar-width: thin;
+}
 
 /* Cards */
 .ss6-card {
@@ -243,7 +263,7 @@ body {
   height: 340px;
   background: #fff;
   border-radius: 14px;
-  box-shadow: 0 10px 28px rgba(0,0,0,0.45);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -259,9 +279,9 @@ body {
   right: 16px;
   top: 16px;
   bottom: 64px;
-  background: linear-gradient(180deg,#f6f6f6,#ffffff);
+  background: linear-gradient(180deg, #f6f6f6, #ffffff);
   border-radius: 10px;
-  border: 1px solid rgba(0,0,0,0.03);
+  border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 /* ชื่อด้านล่าง */
@@ -274,11 +294,18 @@ body {
 
 /* Responsive */
 @media (max-width: 1100px) {
-  .ss6-card { flex: 0 0 210px; height: 320px; }
-  .ss6-artists-title { font-size: 2.2rem; }
+  .ss6-card {
+    flex: 0 0 210px;
+    height: 320px;
+  }
+
+  .ss6-artists-title {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 760px) {
+<<<<<<< HEAD
   .ss6-carousel { gap: 18px; }
   .ss6-card { flex: 0 0 68%; min-width: 240px; height: 320px; }
   .ss6-nav { display: none; } /* บนอุปกรณ์จอเล็ก ให้ใช้นิ้วเลื่อนเอง */
@@ -291,3 +318,211 @@ body {
     width: 100%;
     z-index: 1030; 
 }
+=======
+  .ss6-carousel {
+    gap: 18px;
+  }
+
+  .ss6-card {
+    flex: 0 0 68%;
+    min-width: 240px;
+    height: 320px;
+  }
+
+  .ss6-nav {
+    display: none;
+  }
+
+  /* บนอุปกรณ์จอเล็ก ให้ใช้นิ้วเลื่อนเอง */
+  .CSSgal {
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+    /* กำหนดความสูงของ Slideshow */
+    max-width: 900px;
+    /* กำหนดความกว้างสูงสุด */
+    width: 100%;
+    margin: 0 auto;
+    /* จัดกึ่งกลางในหน้าจอ */
+    border-radius: 1rem;
+    /* เพิ่มความโค้งมน */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+  }
+
+
+  .CSSgal .slider {
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
+  }
+
+
+  .CSSgal .slider>* {
+    font-size: 1rem;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+  }
+
+  .CSSgal .slider>div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .CSSgal .prevNext {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    height: 0;
+  }
+
+  .CSSgal .prevNext>div+div {
+    visibility: hidden;
+  }
+
+  .CSSgal .prevNext a {
+    background: #fff;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    opacity: 0.7;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  .CSSgal .prevNext a:hover {
+    opacity: 1;
+  }
+
+  .CSSgal .prevNext a+a {
+    left: auto;
+    right: 0;
+  }
+
+  /* NAVIGATION */
+
+  .CSSgal .bullets {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .CSSgal .bullets>a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .CSSgal .bullets>a+a {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .CSSgal .bullets>a:hover {
+    background: rgba(255, 255, 255, 0.7) !important;
+  }
+
+  .CSSgal>s:target~.bullets>* {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  #s1:target~.bullets>*:nth-child(1) {
+    background: rgba(255, 255, 255, 1);
+  }
+
+  #s2:target~.bullets>*:nth-child(2) {
+    background: rgba(255, 255, 255, 1);
+  }
+
+  #s3:target~.bullets>*:nth-child(3) {
+    background: rgba(255, 255, 255, 1);
+  }
+
+  #s4:target~.bullets>*:nth-child(4) {
+    background: rgba(255, 255, 255, 1);
+  }
+
+
+  .CSSgal>s:target~.prevNext>* {
+    visibility: hidden;
+  }
+
+  #s1:target~.prevNext>*:nth-child(1) {
+    visibility: visible;
+  }
+
+  #s2:target~.prevNext>*:nth-child(2) {
+    visibility: visible;
+  }
+
+  #s3:target~.prevNext>*:nth-child(3) {
+    visibility: visible;
+  }
+
+  #s4:target~.prevNext>*:nth-child(4) {
+    visibility: visible;
+  }
+
+
+  #s1:target~.slider {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+  }
+
+  #s2:target~.slider {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+
+  #s3:target~.slider {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+  }
+
+  #s4:target~.slider {
+    transform: translateX(-300%);
+    -webkit-transform: translateX(-300%);
+  }
+
+
+  .CSSgal {
+    color: #fff;
+    text-align: center;
+  }
+
+  .CSSgal .slider h2 {
+    margin-top: 40vh;
+    font-weight: 200;
+    letter-spacing: -0.06em;
+    word-spacing: 0.2em;
+    font-size: 3em;
+  }
+
+  .CSSgal a {
+    border-radius: 50%;
+    margin: 0 3px;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+  }
+>>>>>>> 5da1e1960e8d964cacf71030b727241004e3e4f2
