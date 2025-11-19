@@ -25,6 +25,13 @@
     margin-bottom: 1rem;
 }
 
+/* Add hover effect for the hero section title */
+.hero-section h1:hover {
+    transform: scale(1.1); /* Slightly enlarge the text */
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out; /* Smooth animation */
+    text-shadow: 0 0 10px #fec300, 0 0 20px #f0c14b, 0 0 30px #f0c14b; /* Yellow glow effect */
+}
+
 .hero-section p {
     font-size: 1.5rem;
     color: #f0c14b;
