@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
 
 :root {
     --band-gold: #f0c14b;
@@ -15,6 +17,7 @@
 }
 
 .hero-section h1 {
+    font-family: "Geologica", sans-serif;
     font-size: 4rem;
     font-weight: 900;
     letter-spacing: 2px;
@@ -96,7 +99,7 @@
 }
 
 body {
-  font-family: 'Kanit', 'Inter';
+  font-family: "Fredoka", sans-serif;
   /*change font here*/
   font-weight: 300;
 
