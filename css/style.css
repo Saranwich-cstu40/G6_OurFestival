@@ -34,7 +34,7 @@
 
 .hero-section p {
     font-size: 1.5rem;
-    color: #f0c14b;
+    color: var(--band-text-light);
     text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
