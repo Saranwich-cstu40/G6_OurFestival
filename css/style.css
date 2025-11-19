@@ -283,3 +283,11 @@ body {
   .ss6-card { flex: 0 0 68%; min-width: 240px; height: 320px; }
   .ss6-nav { display: none; } /* บนอุปกรณ์จอเล็ก ให้ใช้นิ้วเลื่อนเอง */
 }
+#site-footer {
+    width: 100%;
+    /* ไม่ต้องใส่ position: fixed/absolute เพราะ Flexbox จัดการแล้ว */
+}
+.header {
+    width: 100%;
+    z-index: 1030; 
+}
