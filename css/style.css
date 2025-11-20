@@ -124,25 +124,125 @@ body {
   background-attachment: fixed;
 }
 
-.logo-btn {
-  font-family: Impact, 'Arial Narrow Bold', sans-serif;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  vertical-align: bottom;
+.logo-btn, ul > li > a {
+  font-family: "Geologica", sans-serif;
+  color: white;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo-btn:hover, ul > li:hover > a {
+  color: var(--band-gold) !important;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-family: "Geologica", sans-serif;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
 .navbar-brand img {
-  height: auto;
-  width: 2rem;
-  border-radius: 2rem;
-  margin: 0;
-  padding: 0;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: 1.5rem;
+  width: auto;
+  margin-right: 0.5rem;
   vertical-align: middle;
+  transition: filter 0.3s ease-in-out;
 }
 
-.dropdown-menu-dark {
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+
+nav {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  border-radius: 30px;
+  animation: slide-in 1s ease-out;
+  font-family: "Geologica", sans-serif;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0 30px;
+  list-style-type: none;
+}
+
+ul > li {
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  padding: 10px;
+  transition: none;
+}
+
+ul > li > a {
+  color: white;
+  text-decoration: none;
+  transition: none;
+}
+
+ul > li > ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  display: block;
+  margin: 30px -12px;
+  padding: 0;
+  background: black;
+  border: 2px solid white;
+  border-radius: 20px;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+ul > li > ul > li {
+  margin: -2px 0 0 -2px;
+  width: calc(100% - 20px);
+  line-height: 1.7;
+}
+
+ul > li > ul > li > a {
+  color: #ffffff !important;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: none !important;
+}
+
+ul > li:hover {
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+ul > li:hover > a {
+  color: var(--band-gold) !important;
+}
+
+ul > li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+ul > li > ul > li:hover {
   border: none;
 }
+
+ul > li > ul > li:hover > a {
+  color: var(--band-gold) !important;
+}
+
 
 #site-footer .footer-copyright {
   color: #adb5bd;
