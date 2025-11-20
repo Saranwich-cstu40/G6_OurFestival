@@ -153,13 +153,9 @@ body {
   transition: filter 0.3s ease-in-out;
 }
 
-nav ul {
-  display: flex;
-  align-items: center;
-}
-
-
 nav {
+  position: absolute;
+  z-index: 9999;
   position: absolute;
   top: 15px;
   left: 50%;
@@ -168,6 +164,11 @@ nav {
   border-radius: 30px;
   animation: slide-in 1s ease-out;
   font-family: "Geologica", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
 }
 
 ul {
@@ -242,7 +243,6 @@ ul > li > ul > li:hover {
 ul > li > ul > li:hover > a {
   color: var(--band-gold) !important;
 }
-
 
 #site-footer .footer-copyright {
   color: #adb5bd;
