@@ -11,6 +11,8 @@ body {
     background-position: center; 
     background-attachment: fixed; 
     background-repeat: no-repeat; 
+    
+    
     display: flex;
     flex-direction: column; 
     min-height: 100vh; 
@@ -20,10 +22,9 @@ body {
 main {
     display: flex;
     justify-content: center;
-    
+
     flex-direction: column; 
     align-items: center; 
-    
     padding-top: 80px; 
     padding-bottom: 50px;
     flex-grow: 1; 
@@ -39,13 +40,14 @@ main {
 }
 
 
+
 .food-info-container {
     max-width: 1200px;
     width: 90%;
     display: flex;
-    
+    background-color: rgba(0, 0, 0, 0.85);
     border-radius: 10px;
-    
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
     padding: 40px 60px;
     gap: 40px; 
     align-items: center; 
@@ -53,12 +55,11 @@ main {
     margin-bottom: 50px; 
 }
 
-
+/* ⬅️ ส่วนซ้าย: ข้อมูลและ CEO */
 .food-details-left {
     flex: 2; 
     text-align: left;
     height: 100%; 
-   
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -86,7 +87,7 @@ main {
     max-width: 500px; 
 }
 
-
+/* 👤 CEO Info */
 .ceo-info {
     margin-top: auto; 
     display: flex;
@@ -119,7 +120,7 @@ main {
     margin: 0;
 }
 
-
+/* ➡️ ส่วนขวา: โลโก้และข้อความแบรนด์ */
 .food-details-right {
     flex: 1; 
     text-align: center; 
@@ -130,7 +131,7 @@ main {
     height: 100%; 
 }
 
-
+/* 🖼️ Logo Group */
 .logo-group {
     display: flex;
     flex-direction: column; 
@@ -169,7 +170,7 @@ main {
     width: 90%;
     padding: 20px;
     text-align: center;
-    
+    background-color: rgba(0, 0, 0, 0.5); 
     border-radius: 10px;
 }
 
@@ -196,7 +197,8 @@ main {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
-#main-product-image {
+
+.image-display img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -209,7 +211,8 @@ main {
     padding: 0 20px;
 }
 
-#product-name {
+
+#product-name1, #product-name2 {
     color: #ffd700;
     font-size: 2.5em;
     font-weight: 900;
@@ -217,7 +220,7 @@ main {
     text-transform: uppercase;
 }
 
-#product-description {
+#product-description1, #product-description2 {
     font-size: 1.1em;
     line-height: 1.6;
     color: #ccc;
@@ -235,7 +238,7 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-
+/* ส่วน Thumbnail */
 .thumbnail-selector {
     display: flex;
     justify-content: center;
@@ -270,15 +273,14 @@ main {
         gap: 20px;
     }
 
-    .food-details-left, .food-details-right { /* 💡 แก้ชื่อคลาสเป็น food-details-right */
+    .food-details-left, .food-details-right { 
         text-align: center;
         height: auto;
     }
 
-   
     .ceo-info {
         justify-content: center;
-        margin-top: 20px; /
+        margin-top: 20px; 
     }
     
     .food-details-left {
