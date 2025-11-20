@@ -154,9 +154,8 @@ body {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   z-index: 9999;
-  position: absolute;
   top: 15px;
   left: 50%;
   transform: translateX(-50%);
@@ -164,15 +163,14 @@ nav {
   border-radius: 30px;
   animation: slide-in 1s ease-out;
   font-family: "Geologica", sans-serif;
+  border: 2px solid var(--band-gold);
+  background-color: black;
 }
 
 nav ul {
   display: flex;
   align-items: center;
-}
-
-ul {
-  position: relative;
+    position: relative;
   display: flex;
   flex: 1 1 auto;
   margin: 0;
@@ -180,7 +178,7 @@ ul {
   list-style-type: none;
 }
 
-ul > li {
+nav ul > li {
   position: relative;
   border: 2px solid transparent;
   border-radius: 30px;
@@ -188,13 +186,13 @@ ul > li {
   transition: none;
 }
 
-ul > li > a {
+nav ul > li > a {
   color: white;
   text-decoration: none;
   transition: none;
 }
 
-ul > li > ul {
+nav ul > li > ul {
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -207,13 +205,13 @@ ul > li > ul {
   transition: opacity 0.2s, visibility 0.2s;
 }
 
-ul > li > ul > li {
+nav ul > li > ul > li {
   margin: -2px 0 0 -2px;
   width: calc(100% - 20px);
   line-height: 1.7;
 }
 
-ul > li > ul > li > a {
+nav ul > li > ul > li > a {
   color: #ffffff !important;
   display: block;
   padding: 10px 20px;
@@ -222,25 +220,25 @@ ul > li > ul > li > a {
   transition: none !important;
 }
 
-ul > li:hover {
-  border: 1px solid white;
+nav ul > li:hover {
+  border: 2px solid white;
   border-radius: 30px;
 }
 
-ul > li:hover > a {
+nav ul > li:hover > a {
   color: var(--band-gold) !important;
 }
 
-ul > li:hover > ul {
+nav ul > li:hover > ul {
   visibility: visible;
   opacity: 1;
 }
 
-ul > li > ul > li:hover {
+nav ul > li > ul > li:hover {
   border: none;
 }
 
-ul > li > ul > li:hover > a {
+nav ul > li > ul > li:hover > a {
   color: var(--band-gold) !important;
 }
 
