@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Season Six Music Festival</title>
+    <title>Oppa Daek Food Booth</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/food-booth4.css">
+    <link rel="stylesheet" href="../css/food-booth4.css"> 
     <script src="../js/bootstrap.bundle.js"></script>
 </head>
 
@@ -33,16 +33,16 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#lineup">Guilde</a>
                             <ul class="dropdown-menu bg-dark dropdown-menu-dark dropdown-divider-dark">
-                                <li><a class="dropdown-item" href="booths/band1.html">The White Hair Cut</a></li>
-                                <li><a class="dropdown-item" href="booths/band2.html">Tilly birds</a></li>
-                                <li><a class="dropdown-item" href="booths/band3.html">Whal and dolph</a></li>
-                                <li><a class="dropdown-item" href="booths/band4.html">เขียนไขและวานิช</a></li>
-                                <li><a class="dropdown-item" href="booths/band5.html">Serious bacon</a></li>
-                                <li><a class="dropdown-item" href="booths/band6.html">No one else</a></li>
-                                <li><a class="dropdown-item" href="booths/band7.html">Yented</a></li>
-                                <li><a class="dropdown-item" href="booths/band8.html">Meyou</a></li>
-                                <li><a class="dropdown-item" href="booths/band9.html">Big ass</a></li>
-                                <li><a class="dropdown-item" href="booths/band10.html">Silly fool</a></li>
+                                <li><a class="dropdown-item" href="band1.html">The White Hair Cut</a></li>
+                                <li><a class="dropdown-item" href="band2.html">Tilly birds</a></li>
+                                <li><a class="dropdown-item" href="band3.html">Whal and dolph</a></li>
+                                <li><a class="dropdown-item" href="band4.html">เขียนไขและวานิช</a></li>
+                                <li><a class="dropdown-item" href="band5.html">Serious bacon</a></li>
+                                <li><a class="dropdown-item" href="band6.html">No one else</a></li>
+                                <li><a class="dropdown-item" href="band7.html">Yented</a></li>
+                                <li><a class="dropdown-item" href="band8.html">Meyou</a></li>
+                                <li><a class="dropdown-item" href="band9.html">Big ass</a></li>
+                                <li><a class="dropdown-item" href="band10.html">Silly fool</a></li>
                             </ul>
                         </li>
 
@@ -72,136 +72,209 @@
                 </div>
             </div>
         </nav>
-
     </header>
 
     <main>
-        <section class="hero-section text-center text-white min-vh-100 d-flex align-items-center">
-            <div class="container">
-                <h1 class="display-3 fw-bold">Pa Somjit’s Khanom Jeen</h1>
-                <p class="lead col-md-8 mx-auto">
-                    ป้าสมจิตร ขนมจีน
+        <div class="food-info-container">
+            <div class="food-details-left">
+                <h1 class="food-title">Oppa deak</h1>
+                <p class="food-subtitle">(FOOD ME CO.)</p>
+                <p class="food-description">
+                    Oppad Deok (sometimes transliterated as Oppa Tteok) is a popular Korean restaurant chain in Thailand that specializes in Tteokbokki (spicy rice cakes) and other Korean street food. Known for offering a variety of tteokbokki styles and toppings, the restaurant provides a casual dining experience, often catering to groups with shared sets and buffets to enjoy a wide range of K-Food staples. With branches in various locations, including Bangkok (like Ladprao) and Pathum Thani (such as near Thammasat University Rangsit), Oppad Deok is a go-to spot for Thai diners seeking authentic and customizable Korean comfort food.
                 </p>
+                <div class="ceo-info">
+                    <img src="../resources/imgs/food-booth4-ceo.png" alt="Palit Bhirom-Bhakdi" class="ceo-photo">
+                    <div class="ceo-text">
+                        <p class="ceo-name">Yod Chinsupakakul</p>
+                        <p class="ceo-title">(CEO, FOOD ME CO.)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="food-details-right">
+                <div class="logo-group"> 
+                    <img src="../resources/imgs/food-booth4-logo.png" alt="Oppa Daek Logo" class="food-main-logo">
+                    <p class="food-brand-text">오빠 댁</p>
+                </div>
+            </div>
+        </div>
+        
+        <section class="product-section">
+            
+            <div class="product-container">
+                <h2 class="bestseller-tag">Best seller</h2>
+                
+                <div class="main-content">
+                    <div class="image-display">
+                        <img id="main-product-image" src="../resources/imgs/food-booth4-food6.png" alt="Tteokbokki">
+                    </div>
+                    
+                    <div class="product-details">
+                        <h1 id="product-name">Tteokbokki</h1>
+                        <p id="product-description">Tteokbokki (Spicy Rice Cakes) Tteokbokki is a wildly popular Korean street food made primarily from cylindrical tteok (chewy rice cakes), which are stir-fried in a thick, vibrant red sauce based on gochujang (Korean chili paste). It is often supplemented with ingredients like eomuk (fish cakes), boiled eggs, and scallions. Originally a dish consumed by royalty and later a staple in everyday life, it is now best known as a comforting and intensely flavorful street snack, characterized by its spicy-sweet taste and the uniquely satisfying, chewy texture of the rice cakes.</p>
+                        <div class="price-box">
+                            Price : <span id="product-price">80฿</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thumbnail-selector">
+                    <img class="thumbnail" 
+                        data-id="Tteokbokki"
+                        data-src="../resources/imgs/food-booth4-food6.png" data-name="Tteokbokki"
+                        data-desc="Tteokbokki (Spicy Rice Cakes) Tteokbokki is a wildly popular Korean street food made primarily from cylindrical tteok (chewy rice cakes), which are stir-fried in a thick, vibrant red sauce based on gochujang (Korean chili paste). It is often supplemented with ingredients like eomuk (fish cakes), boiled eggs, and scallions. Originally a dish consumed by royalty and later a staple in everyday life, it is now best known as a comforting and intensely flavorful street snack, characterized by its spicy-sweet taste and the uniquely satisfying, chewy texture of the rice cakes."
+                        data-price="80 ฿"
+                        src="../resources/imgs/food-booth4-food6.png" alt="Tteokbokki"
+                        title="Tteokbokki"
+                    >
+
+                    <img class="thumbnail" 
+                        data-id="Korean Fried Chicken"
+                        data-src="../resources/imgs/food-booth4-food1.png" data-name="Korean Fried Chicken"
+                        data-desc="Korean Fried Chicken, or Chikin, distinguishes itself from its Western counterparts by typically being double-fried, resulting in an exceptionally thin, shatteringly crispy skin and less greasy meat. After frying, the chicken is often coated in a variety of sauces, such as the famous sticky, spicy-sweet yangnyeom sauce, a savory soy-garlic glaze, or served plain (called huraideu). It is a highly celebrated comfort food, often enjoyed with pickled radish and beer (a combination known as chimaek)."
+                        data-price="100 ฿"
+                        src="../resources/imgs/food-booth4-food1.png" alt="Korean Fried Chicken"
+                        title="Korean Fried Chicken"
+                    >
+
+                    <img class="thumbnail" 
+                        data-id="Kimbap"
+                        data-src="../resources/imgs/food-booth4-food4.png" data-name="Kimbap"
+                        data-desc="Kimbap translates to seaweed rice and is a Korean dish made by spreading cooked rice, seasoned with sesame oil and salt, onto a sheet of dried seaweed (gim). The rice is then layered with various fillings—common ones include carrots, cucumber, spinach, egg omelet, crab sticks, or ham—rolled tightly, and sliced into bite-sized pieces. Kimbap is a highly convenient and portable food, frequently packed for picnics or eaten as a light meal or snack, and is distinct from Japanese sushi because its focus is on seasoning the rice with sesame oil rather than vinegar."
+                        data-price="70 ฿"
+                        src="../resources/imgs/food-booth4-food4.png" alt="Kimbap"
+                        title="Kimbap"
+                    >
+                </div>
+            </div>
+            
+           
             </div>
         </section>
+        
+        <script>
+            
+            document.addEventListener('DOMContentLoaded', () => {
+               
+                function setupProductSelector(mainImageId, productNameId, productDescriptionId, productPriceId, thumbnailSelectorId) {
+                    const mainImage = document.getElementById(mainImageId);
+                    const productName = document.getElementById(productNameId);
+                    const productDescription = document.getElementById(productDescriptionId);
+                    const productPrice = document.getElementById(productPriceId);
+                    const thumbnailSelector = document.getElementById(thumbnailSelectorId);
+                    const thumbnails = thumbnailSelector ? thumbnailSelector.querySelectorAll('.thumbnail') : document.querySelectorAll('.thumbnail');
 
-        <section class="food-booth-page-content text-white py-5 mb-5">
-            <div class="container">
-                <div class="row mb-4">
-                    <div class="col-12">
-                        <div class="info-box">
-                            <h2 class="info-box-title">About Us</h2>
-                            <p>
-                                Pa Somjit’s Khanom Jeen Shop is a local Thai rice noodle restaurant that has been serving customers for over 20 years. Located in an old community area, the shop has a warm and friendly atmosphere. Its highlight is the freshly made Khanom Jeen noodles prepared daily and served with a variety of traditional curry sauces, such as spicy jungle curry, coconut milk curry, and northern-style Nam Ngiao. All recipes are original and have been passed down from Pa Somjit’s mother. The shop also offers a wide selection of fresh vegetables and side dishes, making it a popular destination among both locals and tourists who come to enjoy authentic Thai flavors.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    function updateProduct(thumbnailElement) {
+                        const newSrc = thumbnailElement.getAttribute('data-src');
+                        const newName = thumbnailElement.getAttribute('data-name');
+                        const newDesc = thumbnailElement.getAttribute('data-desc');
+                        const newPrice = thumbnailElement.getAttribute('data-price');
 
-            <div class="container">
-                <div class="row mb-4">
-                    <div class="col-12">
-                        <div class="info-box">
-                        <h2 class="info-box-title">Best seller</h2>
-                            <div class="row text-center justify-content-center">
-                                <div class="col-6 col-md-4">
-                                    <div class="food-item">
-                                        <div class="food-image-placeholder">
-                                            <img src="../resources/imgs/food-booth4-product1.jpg" alt="best-seller-food">
-                                        </div>
-                                        <h5 class="mt-3">Thai Rice Noodles with Fish Curry Sauce    </h5>
-                                        <p class="food-description">Thai Rice Noodles with Fish Curry Sauce is a popular Thai dish featuring soft rice noodles served with a rich, aromatic fish curry sauce.</p>
-                                        <p class="food-price">45 ฿</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        mainImage.src = newSrc;
+                        mainImage.alt = newName;
+                        productName.textContent = newName;
+                        productDescription.textContent = newDesc;
+                        productPrice.textContent = newPrice;
 
+                       
+                        if (thumbnailSelector) {
+                            thumbnailSelector.querySelectorAll('.thumbnail').forEach(thumb => {
+                                thumb.classList.remove('active');
+                            });
+                        } else {
+                            
+                            document.querySelectorAll('.thumbnail').forEach(thumb => {
+                                thumb.classList.remove('active');
+                            });
+                        }
+                        thumbnailElement.classList.add('active');
+                    }
 
-                <div class="container">
-                <div class="row mb-4">
-                    <div class="col-12">
-                        <div class="info-box">
-                            <h2 class="info-box-title">Menu</h2>
-                                <div class="row text-center">
-                                    <div class="col-md-4 mb-4 mb-md-0">
-                                        <div class="food-item">
-                                            <div class="food-image-placeholder">
-                                                <img src="../resources/imgs/food-booth4-product1.jpg" alt="Rice noodles in fish curry sauce">
-                                            </div>
-                                                <h5 class="mt-3">Rice noodles in fish curry sauce</h5>
-                                                <p class="food-description">Rice noodles in fish curry sauce is a traditional Thai dish featuring soft fermented noodles topped with a rich, aromatic fish curry.</p>
-                                                <p class="food-price">45 ฿</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-4 mb-md-0">
-                                        <div class="food-item">
-                                            <div class="food-image-placeholder">
-                                                <img src="../resources/imgs/food-booth4-product2.jpg" alt="Fermented Fish Entrails Soup">
-                                            </div>
-                                                <h5 class="mt-3">Fermented Fish Entrails Soup</h5>
-                                                <p class="food-description">Fermented Fish Entrails Soup is a traditional Southern Thai dish known for its bold, spicy flavor, made from fermented fish entrails blended with aromatic herbs and spices.</p>
-                                                <p class="food-price">50 ฿</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-4 mb-md-0">
-                                        <div class="food-item">
-                                            <div class="food-image-placeholder">
-                                                <img src="../resources/imgs/food-booth4-product3.jpg " alt="Green curry">
-                                            </div>
-                                                <h5 class="mt-3">Green curry</h5>
-                                                <p class="food-description">Green Curry is a popular Thai dish with a rich, creamy coconut base and fresh green chili paste, typically cooked with chicken or pork and fragrant basil leaves.</p>
-                                                <p class="food-price">50 ฿</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
+                    thumbnails.forEach(thumbnail => {
+                        thumbnail.addEventListener('click', () => {
+                            updateProduct(thumbnail);
+                        });
+                    });
+
+                    
+                    const initialProduct = thumbnails[0];
+                    if (initialProduct) {
+                        updateProduct(initialProduct); 
+                    }
+                }
+
+                
+                setupProductSelector('main-product-image', 'product-name', 'product-description', 'product-price', null);
+
+                
+            });
+        </script>
     </main>
 
     <footer id="site-footer" class="bg-dark text-white py-4 border-top border-secondary">
+
         <div class="container">
 
             <div class="text-center">
 
                 <div class="footer-copyright mb-3">
+
                     <small>&copy; 2025 SS6 Music Festival. All Rights Reserved.</small>
+
                 </div>
 
                 <div>
+
                     <ul class="list-inline mb-0 fs-4">
+
                         <li class="list-inline-item me-3">
+
                             <a href="#" class="footer-icon-link">
+
                                 <i class="bi bi-facebook"></i>
+
                             </a>
+
                         </li>
+
                         <li class="list-inline-item me-3">
+
                             <a href="#" class="footer-icon-link">
+
                                 <i class="bi bi-instagram"></i>
+
                             </a>
+
                         </li>
+
                         <li class="list-inline-item me-3">
+
                             <a href="#" class="footer-icon-link">
+
                                 <i class="bi bi-twitter-x"></i>
+
                             </a>
+
                         </li>
+
                         <li class="list-inline-item">
+
                             <a href="#" class="footer-icon-link">
+
                                 <i class="bi bi-youtube"></i>
+
                             </a>
+
                         </li>
+
                     </ul>
+
                 </div>
 
             </div>
+
         </div>
+
     </footer>
 </body>
 

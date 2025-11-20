@@ -3347,9 +3347,9 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.fade:not(.show) {
+/*.fade:not(.show) {
   opacity: 0;
-}
+} Disable this function because its make slide conflict*/
 
 .collapse:not(.show) {
   display: none;
