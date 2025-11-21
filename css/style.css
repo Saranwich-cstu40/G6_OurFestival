@@ -154,7 +154,8 @@ body {
 }
 
 nav {
-  position: fixed;
+  
+  position:absolute;
   z-index: 9999;
   top: 15px;
   left: 50%;
@@ -453,16 +454,7 @@ nav ul > li > ul > li:hover > a {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -473,7 +465,6 @@ nav ul > li > ul > li:hover > a {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -489,7 +480,6 @@ nav ul > li > ul > li:hover > a {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -500,7 +490,6 @@ nav ul > li > ul > li:hover > a {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
