@@ -1,12 +1,13 @@
 
 .feedback-section {
-  height: 100vh;
+  min-height: 100vh;
   background: rgba(0, 0, 0, 0.55); 
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   display: flex;
+  padding: 80px;
 }
 
 .feedback-card {
@@ -14,9 +15,9 @@
   box-shadow: 5px 5px 15px #717171;
   border-radius: 15px;
   padding: 35px;
-  width: 400px;
+  width: 600px;
   color: #fff;
-  
+  max-width: 90%;
 }
 
 .feedback-card h2 {
@@ -37,10 +38,12 @@
 }
 
 
-.feedback-card .form-select:focus {
+.feedback-card .form-select:focus,
+.feedback-card .form-control:focus {
   border-color: #0d6efd;
   box-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
   background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
 }
 
 .feedback-card .btn {
@@ -52,4 +55,16 @@
   background-color: #198754;
   color: #fff;
   transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .feedback-section {
+    align-items: flex-start; /* ให้เริ่มจากด้านบน ไม่ต้องอยู่ตรงกลาง */
+    padding-top: 120px;      /* เว้นที่ให้ Navbar */
+    padding-bottom: 50px;
+  }
+
+  .feedback-card {
+    padding: 20px; /* ลดขอบในลงหน่อย พื้นที่มือถือมีน้อย */
+  }
 }
