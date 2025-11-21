@@ -1,23 +1,23 @@
-html,
-body {
-    overflow: hidden;
-    height: 100%;
-}
-
 .form-register {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    display: flex;
     color: #ffffff;
-    width: 100vw;
     height: 100vh;
 }
 
 .register-back {
     background-color: rgba(35, 35, 35, 0.45);
-    box-shadow: 5px 5px 15px #717171;
     color: #ffffff;
     border-radius: 15px;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
 }
 
 .register-card {
@@ -36,11 +36,21 @@ body {
 }
 
 .register-card .form-control::placeholder {
-    color: #757575;
+    color: #bfbfbf;
 }
 
 .register-button {
-    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
     text-align: center;
-    padding : 5px;
+    padding: 5px;
+    background: none;
+    border: 1px solid;
+
+}
+
+.register-button:hover {
+    background-color: #198754;
+    color: #fff;
+    transform: scale(1.03);
 }

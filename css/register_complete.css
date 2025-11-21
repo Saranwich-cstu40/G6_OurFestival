@@ -1,13 +1,8 @@
-html,
-body {
-    overflow: hidden;
-    height: 100%;
-}
+
 
 .register-complete-box {
     border-radius: 10px;
     padding : 30px;
-    box-shadow: 5px 5px 10px #717171;
     background-color: rgba(35, 35, 35, 0.45);
     text-align: center;
 }
@@ -35,8 +30,18 @@ body {
     font-size: 15pt;
     color: #ffffff;
     text-decoration: none;
-    border: 1px solid #ffffff;
+    border: 1px solid rgba(255,255,255,0.9);
     padding: 10px 30px;
-    border-radius: 10px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.register-complete-button:hover {
+    background-color: #198754; /* match feedback hover */
+    color: #fff;
+    transform: scale(1.03);
+    text-decoration: none;
 }
 
