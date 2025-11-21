@@ -30,10 +30,6 @@ main {
     flex-grow: 1; 
 }
 
-.ceo-photo {
-  object-fit: cover; object-position: 70% center;
-}
-
 .header {
     width: 100%;
     z-index: 1030; 
