@@ -63,26 +63,26 @@
     <div class="feedback-card shadow-lg">
       <h2 class="text-center mb-4">Give Us Your Feedback</h2>
 
-      <form novalidate>
+      <form action="php/save_feedback.php" method="POST" novalidate>
          <div class="mb-3">
           <label for="feedbackText" class="form-label">Describe Your Feedback:</label>
-          <textarea class="form-control" id="feedbackText" rows="4" placeholder="Enter your feedback here..."></textarea>
+          <textarea class="form-control" id="feedbackText" name="message" rows="4" placeholder="Enter your feedback here..." required></textarea>
         </div>
 
                 <div class="row mb-3">
                     <div class="col-12 col-md-6">
                         <label for="firstName" class="form-label">First Name</label>
-                        <input type="text" id="firstName" class="form-control" placeholder="First Name">
+                        <input type="text" id="firstName" name="firstname" class="form-control" placeholder="First Name" required>
                     </div>
                     <div class="col-12 col-md-6">
                         <label for="lastName" class="form-label">Last Name</label>
-                        <input type="text" id="lastName" class="form-control" placeholder="Last Name">
+                        <input type="text" id="lastName" name="lastname" class="form-control" placeholder="Last Name" required>
                     </div>
                 </div>
 
         <div class="mb-3">
           <label for="email" class="form-label">E-mail</label>
-          <input type="email" id="email" class="form-control" placeholder="ex: myname@example.com" required>
+          <input type="email" id="email" name="email" class="form-control" placeholder="ex: myname@example.com" required>
           <div class="invalid-feedback">Please enter a valid email.</div>
         </div>
 
