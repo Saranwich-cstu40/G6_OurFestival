@@ -1,14 +1,348 @@
 body {
-    font-family: 'Kanit', 'Inter';
-    /*change font here*/
+    font-family: 'Kanit', 'Inter', sans-serif;
     font-weight: 300;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
 
-    /*Why -> The image is an decoration component, So prefer to put it on css more than html*/
-    background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../resources/imgs/food-booth3-hero-background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url('../resources/imgs/Food_booth_bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    
+    
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column; 
+    align-items: center; 
+    padding-top: 80px; 
+    padding-bottom: 50px;
+    flex-grow: 1; 
+}
+
+.header {
+    width: 100%;
+    z-index: 1030; 
+}
+
+#site-footer {
+    width: 100%;
+}
+
+
+
+.food-info-container {
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+    padding: 40px 60px;
+    gap: 40px; 
+    align-items: center; 
+    position: relative; 
+    margin-bottom: 50px; 
+}
+
+/* ⬅️ ส่วนซ้าย: ข้อมูลและ CEO */
+.food-details-left {
+    flex: 2; 
+    text-align: left;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.food-title {
+    font-size: 4.5em; 
+    font-weight: 900;
+    color: #fff; 
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.food-subtitle {
+    font-size: 1.5em;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.food-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #eee;
+    margin-bottom: 30px;
+    max-width: 500px; 
+}
+
+/* 👤 CEO Info */
+.ceo-info {
+    margin-top: auto; 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ceo-photo {
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 3px solid #ffaa00; 
+}
+
+.ceo-text {
+    text-align: left;
+}
+
+.ceo-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.ceo-title {
+    font-size: 0.9em;
+    color: #aaa;
+    margin: 0;
+}
+
+/* ➡️ ส่วนขวา: โลโก้และข้อความแบรนด์ */
+.food-details-right {
+    flex: 1; 
+    text-align: center; 
+    position: relative; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100%; 
+}
+
+/* 🖼️ Logo Group */
+.logo-group {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.food-main-logo {
+    max-width: 250px; 
+    height: auto;
+    display: block;
+    margin: 0; 
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.food-brand-text {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffaa00; 
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.product-section {
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 50px; 
+    padding: 0 0 50px 0; 
+}
+
+.product-container {
+    max-width: 900px;
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+}
+
+.bestseller-tag {
+    color: #ff0000;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.image-display {
+    width: 40%;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+
+.image-display img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.product-details {
+    width: 55%;
+    text-align: left;
+    padding: 0 20px;
+}
+
+
+#product-name1, #product-name2 {
+    color: #ffd700;
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+#product-description1, #product-description2 {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.price-box {
+    background-color: #ffaa00;
+    color: #000;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: fit-content;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ส่วน Thumbnail */
+.thumbnail-selector {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    width: 70px;
+    height: auto;
+    border: 3px solid transparent;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.thumbnail:hover, .thumbnail.active {
+    opacity: 1;
+    border-color: #ffd700;
+}
+
+
+
+
+@media (max-width: 992px) {
+    .food-info-container {
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .food-details-left, .food-details-right { 
+        text-align: center;
+        height: auto;
+    }
+
+    .ceo-info {
+        justify-content: center;
+        margin-top: 20px; 
+    }
+    
+    .food-details-left {
+        justify-content: flex-start; 
+    }
+
+    .food-title {
+        font-size: 3.5em;
+    }
+
+    .food-main-logo {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .food-brand-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .image-display, .product-details {
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-details {
+        padding: 20px 0;
+    }
+
+    .price-box {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .food-info-container {
+        padding: 20px;
+    }
+    .food-title {
+        font-size: 2.8em;
+    }
+    .food-subtitle {
+        font-size: 1em;
+    }
+    .food-brand-text {
+        font-size: 2em;
+    }
+    .ceo-photo {
+        width: 60px;
+        height: 60px;
+    }
+    .ceo-name {
+        font-size: 1em;
+    }
+    .ceo-title {
+        font-size: 0.8em;
+    }
+    .food-info-container::before {
+        font-size: 5em; 
+    }
 }
