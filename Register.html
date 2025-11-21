@@ -18,59 +18,90 @@
     <nav>   
         <ul>
             <li>
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand" href="index.html">
                     <img src="resources/imgs/logo.png" alt="Homepage-logo">SS6 Music Festival
                 </a>
             </li>
             <li>
                 <a href="#Guilde">Guilde</a>
                 <ul>
-                    <li><a class="dropdown-item" href="../booths/band1.html">THE WHITE HAIR CUT</a></li>
-                    <li><a class="dropdown-item" href="../booths/band2.html">Tilly Birds</a></li>
-                    <li><a class="dropdown-item" href="../booths/band3.html">Whal & Dolph</a></li>
-                    <li><a class="dropdown-item" href="../booths/band4.html">เขียนไขและวานิช</a></li>
-                    <li><a class="dropdown-item" href="../booths/band5.html">SERIOUS BACON</a></li>
-                    <li><a class="dropdown-item" href="../booths/band6.html">No One Else</a></li>
-                    <li><a class="dropdown-item" href="../booths/band7.html">YENTED</a></li>
-                    <li><a class="dropdown-item" href="../booths/band8.html">MEYOU</a></li>
-                    <li><a class="dropdown-item" href="../booths/band9.html">Big Ass</a></li>
-                    <li><a class="dropdown-item" href="../booths/band10.html">Silly Fools</a></li>
+                    <li><a class="dropdown-item" href="booths/band1.html">THE WHITE HAIR CUT</a></li>
+                    <li><a class="dropdown-item" href="booths/band2.html">Tilly Birds</a></li>
+                    <li><a class="dropdown-item" href="booths/band3.html">Whal & Dolph</a></li>
+                    <li><a class="dropdown-item" href="booths/band4.html">เขียนไขและวานิช</a></li>
+                    <li><a class="dropdown-item" href="booths/band5.html">SERIOUS BACON</a></li>
+                    <li><a class="dropdown-item" href="booths/band6.html">No One Else</a></li>
+                    <li><a class="dropdown-item" href="booths/band7.html">YENTED</a></li>
+                    <li><a class="dropdown-item" href="booths/band8.html">MEYOU</a></li>
+                    <li><a class="dropdown-item" href="booths/band9.html">Big Ass</a></li>
+                    <li><a class="dropdown-item" href="booths/band10.html">Silly Fools</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#Lineup">Lineup</a>
                 <ul>
-                    <li><a class="dropdown-item" href="../booths/band1.html">THE WHITE HAIR CUT</a></li>
-                    <li><a class="dropdown-item" href="../booths/band2.html">Tilly Birds</a></li>
-                    <li><a class="dropdown-item" href="../booths/band3.html">Whal & Dolph</a></li>
-                    <li><a class="dropdown-item" href="../booths/band4.html">เขียนไขและวานิช</a></li>
-                    <li><a class="dropdown-item" href="../booths/band5.html">SERIOUS BACON</a></li>
-                    <li><a class="dropdown-item" href="../booths/band6.html">No One Else</a></li>
-                    <li><a class="dropdown-item" href="../booths/band7.html">YENTED</a></li>
-                    <li><a class="dropdown-item" href="../booths/band8.html">MEYOU</a></li>
-                    <li><a class="dropdown-item" href="../booths/band9.html">Big Ass</a></li>
-                    <li><a class="dropdown-item" href="../booths/band10.html">Silly Fools</a></li>
+                    <li><a class="dropdown-item" href="booths/band1.html">THE WHITE HAIR CUT</a></li>
+                    <li><a class="dropdown-item" href="booths/band2.html">Tilly Birds</a></li>
+                    <li><a class="dropdown-item" href="booths/band3.html">Whal & Dolph</a></li>
+                    <li><a class="dropdown-item" href="booths/band4.html">เขียนไขและวานิช</a></li>
+                    <li><a class="dropdown-item" href="booths/band5.html">SERIOUS BACON</a></li>
+                    <li><a class="dropdown-item" href="booths/band6.html">No One Else</a></li>
+                    <li><a class="dropdown-item" href="booths/band7.html">YENTED</a></li>
+                    <li><a class="dropdown-item" href="booths/band8.html">MEYOU</a></li>
+                    <li><a class="dropdown-item" href="booths/band9.html">Big Ass</a></li>
+                    <li><a class="dropdown-item" href="booths/band10.html">Silly Fools</a></li>
                 </ul>
             </li>
-            <li><a href="../Feedback.html">Feedback</a></li>
-            <li><a href="../Register.html">Register</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="Register.html">Register</a></li>
         </ul>
     </nav>
     </header>
     
     <section class="form-register">
-        <form id="registerForm" class="was-validated " novalidate>
+        <form id="registerForm" action="php/save_data.php" method="POST" novalidate>
             <div class="register-back register-card">
                 <h2>Register</h2>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="input-firstname" class="form-label">First Name:</label>
+                        <input id="input-firstname" type="text" name="firstname" class="form-control" placeholder="First Name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="input-lastname" class="form-label">Last Name:</label>
+                        <input id="input-lastname" type="text" name="lastname" class="form-control" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="input-age" class="form-label">Age:</label>
+                        <input id="input-age" type="number" name="age" class="form-control" placeholder="20" min="15" required>
+                    </div>
+                    <div class="col-md-8 mb-3">
+                        <label for="input-gender" class="form-label">Gender:</label>
+                        <select id="input-gender" name="gender" class="form-select form-control" required>
+                            <option value="" selected disabled>Choose...</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="LGBTQ">LGBTQ+</option>
+                            <option value="Other">Prefer not to say</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="input-phone" class="form-label">Phone Number:</label>
+                    <input id="input-phone" type="tel" name="phone" class="form-control" placeholder="08xxxxxxxx" pattern="[0-9]{10}" required>
+                </div>
+
                 <div>
                     <label for="input-email" class="form-label">Email:</label><br>
-                    <input id="input-email" type="email" name="email" class="form-control" placeholder="name@gmail.com"
-                        id="input-email" required>
+                    <input id="input-email" type="email" name="email" class="form-control" placeholder="name@gmail.com"id="input-email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
                     <div class="valid-feedback">Nice!</div>
                     <div class="invalid-feedback">Please make sure your email is valid.</div>
                 </div>
-
-                <br><br>
 
                 <div>
                     <label for="input-password" class="form-label">Password:</label><br>
