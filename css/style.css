@@ -16,7 +16,7 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
-.hero-section h1 {
+.hero-section .hp {
   font-family: "Geologica", sans-serif;
   font-size: 4rem;
   font-weight: 900;
@@ -26,7 +26,7 @@
 }
 
 /* Add hover effect for the hero section title */
-.hero-section h1:hover {
+.hero-section .hp:hover {
   transform: scale(1.1);
   /* Slightly enlarge the text */
   transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
