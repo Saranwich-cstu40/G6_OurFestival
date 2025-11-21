@@ -101,6 +101,7 @@ main {
     border-radius: 50%; 
     object-fit: cover;
     border: 3px solid #ffaa00; 
+    object-fit: cover; object-position: 70% center;
 }
 
 .ceo-text {
