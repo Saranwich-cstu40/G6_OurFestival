@@ -493,3 +493,78 @@ nav ul > li > ul > li:hover > a {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.product-image-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image-placeholder img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.product-item {
+  padding: 8px;
+}
+
+.product-item h5 {
+  font-size: 0.9rem;
+}
+
+.product-price {
+  font-size: 0.85rem;
+}
+
+@media (min-width: 400px) {
+  .products-grid {
+    gap: 10px;
+  }
+
+  .product-image-placeholder img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-item h5 {
+    font-size: 1.1rem;
+  }
+
+  .product-price {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-item h5 {
+    font-size: 1rem;
+  }
+
+  .product-price {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .product-item h5 {
+    font-size: 1.25rem;
+  }
+
+  .product-price {
+    font-size: 1.05rem;
+  }
+
+}
