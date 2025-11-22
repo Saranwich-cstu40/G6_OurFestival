@@ -14,6 +14,7 @@
 
 <body>
     <header>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <nav>   
         <ul>
             <li>
@@ -21,7 +22,7 @@
                     <img src="resources/imgs/logo.png" alt="Homepage-logo">SS6 Music Festival
                 </a>
             </li>
-            <li>
+            <li class="dropdown">
                 <a href="#booths">booths</a>
                 <ul>
                     <li><a class="dropdown-item" href="booths/band1.html">THE WHITE HAIR CUT</a></li>
@@ -36,7 +37,7 @@
                     <li><a class="dropdown-item" href="booths/band10.html">Silly Fools</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="dropdown">
                 <a href="#Lineup">Lineup</a>
                 <ul>
                     <li><a class="dropdown-item" href="booths/band1.html">THE WHITE HAIR CUT</a></li>
@@ -239,8 +240,8 @@
             </div>
         </div>
     </footer>
-    </footer>
     <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>
