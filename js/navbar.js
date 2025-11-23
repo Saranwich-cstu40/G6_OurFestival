@@ -70,15 +70,13 @@ document.querySelectorAll("nav ul > li").forEach(item => {
 window.addEventListener("scroll", () => {
     const nav = document.querySelector("nav");
 
-    // เช็คว่าหน้าจอเป็น Desktop เท่านั้น (≥ 769px)
     const isDesktop = window.innerWidth > 768;
 
     if (!isDesktop) {
-        nav.classList.remove("sticky");   // ไม่ใช้ sticky บนมือถือ
+        nav.classList.remove("sticky");
         return;
     }
 
-    // Sticky เฉพาะ desktop เมื่อ scroll > 80px
     if (window.scrollY > 80) {
         nav.classList.add("sticky");
     } else {
