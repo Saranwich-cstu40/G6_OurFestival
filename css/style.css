@@ -178,6 +178,8 @@ nav {
   border-radius: 30px;
   animation: slide-in 1s ease-out;
   font-family: "Geologica", sans-serif;
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 nav.sticky {
