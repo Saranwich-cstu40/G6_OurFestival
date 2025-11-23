@@ -66,3 +66,20 @@ document.querySelectorAll("nav ul > li").forEach(item => {
         });
     }
 });
+
+window.addEventListener("scroll", () => {
+    const nav = document.querySelector("nav");
+
+    const isMobile = Math.min(window.innerWidth, window.innerHeight) <= 768;
+
+    if (isMobile) {
+        nav.classList.remove("sticky");
+        return;
+    }
+
+    if (window.scrollY > 80) {
+        nav.classList.add("sticky");
+    } else {
+        nav.classList.remove("sticky");
+    }
+});

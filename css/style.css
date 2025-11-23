@@ -167,7 +167,8 @@ body {
 
 /* NAV WRAPPER */
 nav {
-  position: absolute;
+  position: relative;
+  transition: all 0.25s ease;
   top: 15px;
   left: 50%;
   transform: translateX(-50%);
@@ -177,6 +178,27 @@ nav {
   border-radius: 30px;
   animation: slide-in 1s ease-out;
   font-family: "Geologica", sans-serif;
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    z-index: 9999;
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.9);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.sticky ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
 }
 
 /* NAV LIST */
@@ -217,17 +239,23 @@ nav ul > li > ul {
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(10px);
   margin-top: 0;
-  padding-top: 12px;
-  background: black;
-  transition: opacity 0.25s, visibility 0.25s;
-  transition-delay: 0.25s;
+  padding: 12px 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease,
+    transform 0.25s ease;
+  transition-delay: 0s;
   z-index: 9999;
   align-items: center;
   justify-content: center;
   border: 2px solid var(--band-gold);
-  border-radius: 30px;
+  border-radius: 20px;
+  width: max-content;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px);
 }
 
 /* DROPDOWN ITEM */
@@ -254,6 +282,7 @@ nav ul > li:hover > ul {
   visibility: visible;
   opacity: 1;
   transition-delay: 0s;
+  transform: translateX(-50%) translateY(0);
 }
 
 /* HOVER STATE */
@@ -267,7 +296,8 @@ nav ul > li > ul > li:hover > a {
 @media (min-width: 769px) {
 
   nav.active {
-    background-color: black !important;
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.9);
   }
 
   nav ul > li > ul {
@@ -315,7 +345,7 @@ nav ul > li > ul > li:hover > a {
 
   .menu-toggle {
     display: block;
-    position: absolute;
+    position: fixed;
     left: 20px;
     top: 18px;
     z-index: 10000;
@@ -358,7 +388,8 @@ nav ul > li > ul > li:hover > a {
     top: 100%;
     left: 50%;
     width: 90vw;
-    background: black;
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.9);
     padding: 0;
     z-index: 9999;
     transform: translate(-50%, -10px);
@@ -379,7 +410,8 @@ nav ul > li > ul > li:hover > a {
   }
 
   nav.active {
-    background-color: black !important;
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.9);
     display: block;
   }
 
