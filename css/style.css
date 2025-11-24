@@ -442,6 +442,13 @@ nav ul > li > ul > li:hover > a {
     opacity: 1;
     border: 2px solid var(--band-gold) !important;
     margin: 0 auto;
+    width: max-content;
+    max-width: 90vw;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 12px;
+    border-radius: 20px;
   }
   
   .navbar-brand {
