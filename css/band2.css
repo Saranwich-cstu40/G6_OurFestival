@@ -6,7 +6,7 @@ body {
   /*Why -> The image is an decoration component, So prefer to put it on css more than html*/
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("https://admin.adaddictth.com/files/interview/tilly%20birds/TBS2_Hires.jpg");
+    url("resources/imgs/band2-hero-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
