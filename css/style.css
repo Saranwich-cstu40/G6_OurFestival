@@ -356,7 +356,7 @@ nav ul > li > ul > li:hover > a {
 
   nav {
     display: none;
-    width: 90%;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
     margin: 0 auto;
