@@ -2,11 +2,11 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $file_name = '../data/feedback.json';
 
-    $message   = $_POST['message'] ?? '';
-    $firstname = $_POST['firstname'] ?? '';
-    $lastname  = $_POST['lastname'] ?? '';
-    $email     = $_POST['email'] ?? '';
-    $rating    = $_POST['rating'] ?? '5.0';
+    $message   = htmlspecialchars($_POST['message'] ?? '', ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $firstname = htmlspecialchars($_POST['firstname'] ?? '', ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $lastname  = htmlspecialchars($_POST['lastname'] ?? '', ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $email     = htmlspecialchars($_POST['email'] ?? '', ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $rating    = htmlspecialchars($_POST['rating'] ?? '5.0', ENT_QUOTES | ENT_HTML5, 'UTF-8');
 
     if (empty($message) || empty($firstname) || empty($lastname) || empty($email)) { //ไม่ได้ตรวจสอบ rating เพราะมีค่า default
         die("Please fill all fields");
