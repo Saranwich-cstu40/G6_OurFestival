@@ -359,6 +359,7 @@ nav ul > li > ul > li:hover > a {
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
+    margin: 0 auto;
   }
 
   nav > ul {
@@ -367,6 +368,7 @@ nav ul > li > ul > li:hover > a {
     text-align: center;
     width: 100%;
     padding: 20px 0;
+    margin: 0 auto;
   }
 
   nav ul > li {
@@ -375,6 +377,7 @@ nav ul > li > ul > li:hover > a {
     margin: 0 !important;
     width: 100%;
     cursor: pointer;
+    margin: 0 auto;
   }
 
   nav ul > li > a {
@@ -383,6 +386,7 @@ nav ul > li > ul > li:hover > a {
     padding: 12px 0;
     position: relative;
     z-index: 10;
+    margin: 0 auto;
   }
 
   /* MOBILE DROPDOWN */
@@ -406,24 +410,29 @@ nav ul > li > ul > li:hover > a {
     box-shadow: 0 8px 20px rgba(0,0,0,0.6);
     border: none !important;
     border-radius: 30px;
+    margin: 0 auto;
   }
   
   nav ul > li > ul > li > a {
     padding: 12px;
+    margin: 0 auto;
   }
 
   nav.active {
     backdrop-filter: blur(6px);
     background: rgba(0, 0, 0, 0.9);
     display: block;
+    margin: 0 auto;
   }
 
   nav.active > ul {
     display: flex !important;
+    margin: 0 auto;
   }
 
   nav ul > li.active > a {
     color: var(--band-gold) !important;
+    margin: 0 auto;
   }
 
   nav ul > li.open > ul {
@@ -432,12 +441,14 @@ nav ul > li > ul > li:hover > a {
     visibility: visible;
     opacity: 1;
     border: 2px solid var(--band-gold) !important;
+    margin: 0 auto;
   }
   
   .navbar-brand {
     padding: 10px 14px;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
   }
 
 }
@@ -572,6 +583,22 @@ nav ul > li > ul > li:hover > a {
   background: linear-gradient(180deg, #f6f6f6, #ffffff);
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.about {
+  color : #fff;
+}
+
+.about h2 {
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+
+.about p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 800px;
 }
 
 /* ชื่อด้านล่าง */

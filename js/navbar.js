@@ -69,15 +69,13 @@ document.querySelectorAll("nav ul > li").forEach(item => {
 
 window.addEventListener("scroll", () => {
     const nav = document.querySelector("nav");
+    if (!nav) return;
 
-    const isDesktop = window.innerWidth > 768;
-
-    if (!isDesktop) {
-        nav.classList.remove("sticky");
-        return;
-    }
-
-    if (window.scrollY > 80) {
+    // Make navbar sticky on all devices. If you prefer different
+    // behavior on small screens, adjust the threshold or add checks
+    // for when the mobile menu is open.
+    const threshold = 80;
+    if (window.scrollY > threshold) {
         nav.classList.add("sticky");
     } else {
         nav.classList.remove("sticky");
