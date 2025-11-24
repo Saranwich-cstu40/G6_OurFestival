@@ -500,6 +500,119 @@ nav ul>li>ul>li:hover>a {
   display: block;
   border-radius: 12px;
 }
+.review-section {
+    position: relative;
+    z-index: 10;
+}
+
+.review-title {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.8);
+    margin-bottom: 2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.review-container .carousel-item {
+    background-color: transparent !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.review-card {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6) !important;
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 250px;
+    color: #ffffff;
+}
+
+.review-card .card-title {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 0.5rem;
+}
+
+.review-card .card-text {
+    color: #e0e0e0;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.rating-star {
+    color: #ffc107;
+    filter: drop-shadow(0 0 5px rgba(255, 193, 7, 0.8));
+    font-size: 1.4rem;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+}
+
+.avg-score {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+.review-container .text-white-50 {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.review-container .carousel-control-prev,
+.review-container .carousel-control-next {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.review-container .carousel-control-prev-icon,
+.review-container .carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    background-size: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.review-container .carousel-control-prev:hover,
+.review-container .carousel-control-next:hover {
+    opacity: 1;
+}
+
+.review-container .carousel-control-prev:hover .carousel-control-prev-icon,
+.review-container .carousel-control-next:hover .carousel-control-next-icon {
+    background-color: #f0c14b;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(240, 193, 75, 0.5);
+    border-color: #fff;
+    filter: none;
+}
+
+.review-container .carousel-item.active {
+    background-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+    .review-card {
+        margin: 0 15px;
+        padding: 1.5rem !important;
+    }
+    .avg-score {
+        font-size: 3rem;
+    }
+}
 
 /* SS6 - Our Artist Section */
 .ss6-artists {

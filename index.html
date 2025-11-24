@@ -7,7 +7,7 @@
     <title>Season Six Music Festival</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=2">
     <script src="js/bootstrap.bundle.js"></script>
 
 </head>
@@ -234,6 +234,36 @@
                         </article>
         </section>
 
+        <section class="review-container container my-5 py-5">
+    
+            <h2 class="review-title text-center mb-5 display-5 fw-bold">Customer Reviews</h2>
+
+            <div id="rating-display" class="row justify-content-center mb-5 text-center">
+                <div class="col-12 text-white">
+                    <div class="spinner-border text-warning" role="status" style="width: 3rem; height: 3rem;">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-2 text-white-50">Reading reviews...</p>
+                </div>
+            </div>
+
+            <div id="feedbackCarousel" class="carousel slide" data-bs-ride="carousel" style="display:none;">
+                
+                <div class="carousel-inner pb-5" id="reviews-container">
+                    </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+
         <section class="devs mt-5 mb text-white py-5">
 
 
@@ -348,6 +378,7 @@
     </footer>
     <script src="js/main.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/show_feedback.js"></script>
 </body>
 
 </html>
