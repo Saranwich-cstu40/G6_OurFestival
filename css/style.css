@@ -775,10 +775,22 @@ nav ul>li>ul>li:hover>a {
   display: none
 }
 
+.mySlides img {
+  width: 100%;
+}
+
+.loading {
+  width: 3rem;
+  height: 3rem;
+}
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+}
+
+#feedbackCarousel{
+  display:none;
 }
 
 /* Next & previous buttons */
