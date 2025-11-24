@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
 
+html, body {
+  overflow-x: hidden; /* บังคับตัดส่วนเกินแนวนอนทิ้งทั้งหมด */
+  width: 100%;
+}
+
 :root {
   --band-gold: #f0c14b;
   --band-box-bg: #1a1a1a;
@@ -10,7 +15,7 @@
 
 .band-page-content {
   background-color: rgba(0, 0, 0, 0);
-}
+} 
 
 .food-booth-page-content {
   background-color: rgba(0, 0, 0, 0);
@@ -775,22 +780,10 @@ nav ul>li>ul>li:hover>a {
   display: none
 }
 
-.mySlides img {
-  width: 100%;
-}
-
-.loading {
-  width: 3rem;
-  height: 3rem;
-}
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
-}
-
-#feedbackCarousel{
-  display:none;
 }
 
 /* Next & previous buttons */
