@@ -6,8 +6,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $firstname = $_POST['firstname'] ?? '';
     $lastname  = $_POST['lastname'] ?? '';
     $email     = $_POST['email'] ?? '';
+    $rating    = $_POST['rating'] ?? '5.0';
 
-    if (empty($message) || empty($firstname) || empty($lastname) || empty($email)) {
+    if (empty($message) || empty($firstname) || empty($lastname) || empty($email)) { //ไม่ได้ตรวจสอบ rating เพราะมีค่า default
         die("Please fill all fields");
     }
 
@@ -16,6 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         'firstname' => $firstname,
         'lastname'  => $lastname,
         'email'     => $email,
+        'rating'    => $rating,
         'message'   => $message,
         'timestamp' => date('Y-m-d H:i:s')
     ];

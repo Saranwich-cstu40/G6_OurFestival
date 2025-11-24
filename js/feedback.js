@@ -1,7 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
-    const inputs = form.querySelectorAll('input, textarea');
+    const inputs = form.querySelectorAll('input:not([type="range"]), textarea');
+    const ratingInput = document.getElementById('rating');
+    const ratingValue = document.getElementById('ratingValue');
 
+    if (ratingInput && ratingValue) {
+        ratingInput.addEventListener('input', function() {
+            ratingValue.textContent = this.value;
+        });
+    }
     inputs.forEach(input => {
         let timer;
 
