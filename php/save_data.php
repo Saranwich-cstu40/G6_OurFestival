@@ -1,14 +1,17 @@
 <?php
+
+date_default_timezone_set('Asia/Bangkok');
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $file_name = '../data/users.json';
 
-    $email = $_POST['email'] ?? '';
-    $password = $_POST['password'] ?? '';
-    $firstname = $_POST['firstname'] ?? '';
-    $lastname  = $_POST['lastname'] ?? '';
-    $age       = $_POST['age'] ?? '';
-    $gender    = $_POST['gender'] ?? '';
-    $phone     = $_POST['phone'] ?? '';
+    $email     = htmlspecialchars($_POST['email'] ?? '', ENT_QUOTES, 'UTF-8');
+    $password  = htmlspecialchars($_POST['password'] ?? '', ENT_QUOTES, 'UTF-8');
+    $firstname = htmlspecialchars($_POST['firstname'] ?? '', ENT_QUOTES, 'UTF-8');
+    $lastname  = htmlspecialchars($_POST['lastname'] ?? '', ENT_QUOTES, 'UTF-8');
+    $age       = htmlspecialchars($_POST['age'] ?? '', ENT_QUOTES, 'UTF-8');
+    $gender    = htmlspecialchars($_POST['gender'] ?? '', ENT_QUOTES, 'UTF-8');
+    $phone     = htmlspecialchars($_POST['phone'] ?? '', ENT_QUOTES, 'UTF-8');
 
     if (empty($firstname) || empty($lastname) || empty($email) || empty($password)) {
         die("Please fill all required fields");
